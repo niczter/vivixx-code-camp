@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+* {
+	margin:0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.clear{
+	clear: both;
+}
+body {
+	padding: 20px;
+	background: #282828;
+}
+#header {
+	border-bottom: 1px solid #ffffff;
+	margin: 5%;
+	color: #ffffff;
+}
+#logo {
+	font-size: 35px;
+	color: #F5F5F5;
+	float: left;
+	width: 50%;
+}
+#logo img{
+	height:40px;
+	width: auto;
+	border-left: 10px solid #A9A9A9;
+	margin-right: 10px;
+}
+#menu {
+	border-top: 10px solid #A9A9A9;
+	padding: 5px;
+}
+#menu ul li{
+	display: inline-block;
+	padding: 15px;
+	color: black;
+}
+#hero{
+	width: 100%;
+	margin: 30px 0;
+}
+#hero img{
+	width: 100%;
+	height: auto;
+}
+#albumtitle {
+	font-size: 25px;
+	margin: 10px;
+}
+.featured-image.first{
+	float: left;
+	width: 72%;
+	margin: 1%;
+}
+.featured-image.last{
+	float: right;
+	width: 24%;
+	margin: 1%;
+}
+.featured-image img{
+	width: 100%;
+	height: auto;
+}
+#address {
+	font-size: 15px;
+	float:left;
+	margin-top: 10px;
+	padding: 10px;
+}
+#copyright {
+	float: right;
+	list-style: none;
+	margin-top: 10px;
+	padding: 10px;
+}
+#footer{
+	border-top: 1px solid #000000;
+	margin:37% 0 0 0;
+}
