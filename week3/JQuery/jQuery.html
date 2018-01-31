@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>jQ</title>
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<header>
+		<button class="hamburger">&spades;</button>
+		<button class="cross">&#9752;</button>
+	</header>
+
+
+	<a href="javascript:void(0);">Show</a>
+	<button onclick="$('p').append('!!!');">Append</button>
+	<div class="header"></div>
+
+
+	<div class="menu">
+  		<ul id="menu">
+		   <a href="#"><li>Bahay</li></a>
+		   <a href="#"><li>Galleria</li></a>
+		   <a href="#"><li>Tungkol Sa'yo</li></a>
+		   <a href="#"><li>Tawagan kami</li></a>
+		   <a href="#"><li>Pag-uusap</li></a>
+		</ul>
+	</div> 
+
+
+
+
+
+
+	<script>
+		var newP = $('<p>Welcome!</p>');
+		newP.css({'float':'left', 'background-color': 'red'});
+		newP.addClass('special');
+		$('div.header').append(newP);
+		$('div.header p.special').hide();
+
+
+		var onButtonClick = function() {
+			console.log('clicked!');
+			$('div.header').slideToggle();
+
+		};
+		$('a').on('click', onButtonClick());
+
+
+
+
+//		var p = document.createElement('p');
+//		p.appendChild(document.createTextNode('Welcome!'));
+//		p.style.cssFloat = 'left';
+//		p.style.backgroundColor = 'red';
+//		p.className = 'special';
+//		document.querySelector('div.header').appendChild(p);
+	</script>
+</body>
+</html>
